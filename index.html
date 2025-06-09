@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Převodník měn</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="kurzy.html">Kurzy</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="historie.html">Historie</a></li>
+    </ul>
+</nav>
+
+<main>
+    <h1>Převodník měn</h1>
+    <form id="converter">
+        <label for="amount">Částka:</label>
+        <input type="number" id="amount" name="amount" required>
+
+        <label for="from">Z měny:</label>
+        <select id="from">
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            <option value="CZK">CZK</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+        </select>
+
+        <label for="to">Do měny:</label>
+        <select id="to">
+            <option value="CZK">CZK</option>
+            <option value="EUR">EUR</option>
+            <option value="USD">USD</option>
+            <option value="GBP">GBY</option>
+            <option value="JPY">JPY</option>
+        </select>
+
+        <button type="submit">Převést</button>
+    </form>
+
+    <p id="result"></p>
+
+    <img id="obrazek-penize"  src="obrázky/penize.webp" title="penize">
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
